@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylin.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
+    <script src="transmitterBuilder.js"></script>
+    <script src="Impact.js"></script>
+    <script src="Compact.js"></script>
+    <script src="Packer.js"></script>
+    <script src="Toggle.js"></script>    
+    <script src="JStick.js"></script>      
+    <script src="Paddle.js"></script>
+
+    <div class="dropdown">
+        <button onclick="transmitterDDFunction()" class="dropbtn">Pick a transmitter!</button>
+        <div id="transmitterDropdown" class="dropdown-content">
+            <a id="impact" onclick="CreateImpact()" href="#">Impact</a>
+            <a id="compact" onclick="CreateCompact()" href="#">Compact</a>
+            <a id="packer" onclick="CreatePacker()" href="#">Packer</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button onclick="switchDDFunction()" class="dropbtn">Pick a Switch/Paddle/Joystick!</button>
+        <div id="switchDropdown" class="dropdown-content">
+            <a id="tggleSwitch" onclick="CreateToggleSwitch()" href="#">Toggle Switch</a>
+            <a id="paddle" onclick="CreatePaddle()" href="#">Paddle</a>
+            <a id="joystick" onclick="CreateJStick()" href="#">Joystick</a>
+        </div>
+    </div>
+    <div class="undo">
+        <button onclick="undoFunction()" class="undobtn">Undo</button>
+    </div>
+    <div class="spacer"></div>
+    <div id="canvasHolder">
+        <canvas id="canvasElement" width="2000" height="1000"></canvas>
+    </div>
+</body>
+
+</html>
